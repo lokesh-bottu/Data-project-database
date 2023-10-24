@@ -15,7 +15,37 @@
 ## 3. Write a SQL script that loads CSV data into a table.
 
 - Create a table with the same attributes and then copy the data to that table.
-- CREATE TABLE deliveries (
+
+
+
+#### creating matches table
+- CREATE TABLE cricket_matches (
+id serial PRIMARY KEY,
+season integer,
+city text,
+date date,
+team1 text,
+team2 text,
+toss_winner text,
+toss_decision text,
+result text,
+dl_applied boolean,
+winner text,
+win_by_runs integer,
+win_by_wickets integer,
+player_of_match text,
+venue text,
+umpire1 text,
+umpire2 text,
+umpire3 text
+);
+
+
+
+
+
+
+#### CREATE TABLE deliveries (
 match_id INT,
 inning INT,
 batting_team text,
