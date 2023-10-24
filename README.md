@@ -42,10 +42,8 @@ umpire3 text
 
 
 
-
-
-
-#### CREATE TABLE deliveries (
+#### Create table Deliveries
+- CREATE TABLE deliveries (
 match_id INT,
 inning INT,
 batting_team text,
