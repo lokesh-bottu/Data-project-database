@@ -40,7 +40,8 @@ umpire2 text,
 umpire3 text
 );
 
-
+#### copy the csv file to the created table
+- .\copy umpires FROM '/home/lokesh/Downloads/MB SQL/matches.csv' DELIMITER ',' CSV HEADER;
 
 #### Create table Deliveries
 - CREATE TABLE deliveries (
@@ -66,3 +67,8 @@ player_dismissed text,
 dismissal_kind text,
 fielder text
 );
+
+#### copy the csv file to the created table
+- .\copy umpires FROM '/home/lokesh/Downloads/MB SQL/deliveries.csv' DELIMITER ',' CSV HEADER;
+
+
