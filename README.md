@@ -34,7 +34,7 @@ penalty_runs INT,
 batsman_runs INT,
 extra_runs INT,
 total_runs INT,
-player_dismissed VARCHAR(255),
-dismissal_kind VARCHAR(255),
-fielder VARCHAR(255)
+player_dismissed text,
+dismissal_kind text,
+fielder text
 );
