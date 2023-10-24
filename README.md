@@ -12,4 +12,29 @@
 - To delete the database   DROP DATABASE IF EXISTS "database_name";
 - To delete the user  DROP USER IF EXISTS "username";
 
-## 3. 
+## 3. Write a SQL script that loads CSV data into a table.
+
+- Create a table with the same attributes and then copy the data to that table.
+- CREATE TABLE deliveries (
+match_id INT,
+inning INT,
+batting_team text,
+bowling_team text,
+over DECIMAL(5,2),
+ball INT,
+batsman VARCHAR(255),
+non_striker VARCHAR(255),
+bowler VARCHAR(255),
+is_super_over BOOLEAN,
+wide_runs INT,
+bye_runs INT,
+legbye_runs INT,
+noball_runs INT,
+penalty_runs INT,
+batsman_runs INT,
+extra_runs INT,
+total_runs INT,
+player_dismissed VARCHAR(255),
+dismissal_kind VARCHAR(255),
+fielder VARCHAR(255)
+);
