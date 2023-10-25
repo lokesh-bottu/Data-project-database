@@ -65,3 +65,13 @@ select winner,sum(win_by_runs) Total_Runs_Conceded
 from matches
 where season = 2016
 group by season ,winner;
+
+
+--Question 8
+
+SELECT bowler, (sum(total_runs)) / (count(ball) / 6) as Economy
+FROM matches,deliveries
+WHERE id = match_id and season = 2015
+GROUP BY bowler
+ORDER BY economy DESC
+LIMIT 10;
